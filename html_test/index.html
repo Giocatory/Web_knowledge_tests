@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Экзамен по HTML</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Экзамен по HTML</h1>
+        
+        <div id="start-screen">
+            <p>Тест состоит из 5 случайных вопросов по HTML. На выполнение дается 5 минут.</p>
+            <p>Всего в базе 50 вопросов, каждый раз тест будет разным!</p>
+            <button id="start-btn" class="btn">Начать экзамен</button>
+        </div>
+        
+        <div id="quiz-screen">
+            <div id="timer">05:00</div>
+            <div class="progress">
+                <div class="progress-bar" id="progress-bar"></div>
+            </div>
+            <div id="questions-container"></div>
+            <button id="submit-btn" class="btn" disabled>Завершить экзамен</button>
+        </div>
+        
+        <div id="result-screen">
+            <h2>Результаты экзамена</h2>
+            <div id="score">0/5</div>
+            <p id="result-message"></p>
+            <div id="results-details" style="margin-top: 20px; text-align: left;"></div>
+            <button id="restart-btn" class="btn">Заново</button>
+        </div>
+    </div>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>
